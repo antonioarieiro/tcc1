@@ -1,0 +1,290 @@
+% ----------------------------------------------------------------------------------------------------- %
+% Manual da Classe UFTeX
+% 
+% Versão 2.1:   Março 2018
+%
+% Criado por:   Tiago da Silva Almeida
+% Revisado por: Tiago da Silva Almeida
+%               Rafael Lima de Carvalho
+%               Ary Henrique Morais de Oliveira
+%
+% https://almeidatiago.github.io/uftex/
+% ----------------------------------------------------------------------------------------------------- %
+
+\documentclass[tcc1,project]{classe_uftex/uftex}	
+
+\usepackage[alf,abnt-emphasize=bf]{abntex2cite}
+\renewcommand{\backrefpagesname}{}
+\renewcommand{\backref}{}
+\renewcommand*{\backrefalt}[4]{}
+
+\begin{document}
+  \title{AnimaTEA: Desenvolvendo Aprendizagem Acessível para Crianças com TEA através de Jogos em Dispositivos Móveis e Cultura do Tocantins}
+  \author{João}{Pedro Franco Carneiro Resque}
+  \advisor{Prof.}{Eduardo}{Ribeiro}{Dr.}
+
+  \department{CC}
+  \date{20}{09}{2023}
+
+  \keyword{SNCT}
+  \keyword{Inovação}
+  \keyword{Desenvolvimento Tecnológico}
+  
+  \field{Desenvolvimento de Sistemas}
+
+  \maketitle
+
+  \begin{abstract}
+  
+O Projeto de Trabalho de Conclusão de Curso "AnimaTEA" visa criar um jogo para dispositivos móveis que ensine de forma lúdica os conceitos de lógica e matemática a crianças com Transtorno do Espectro Autista (TEA). Baseado no projeto de extensão AnimaTEA da Universidade Federal do Tocantins, que utiliza animações 3D e elementos culturais locais, esta pesquisa pretende desenvolver ferramentas e métodos pedagógicos para criar um jogo educativo inclusivo. 
+
+O jogo será projetado considerando as necessidades específicas das crianças com TEA e empregará conceitos de gamificação e design acessível. Um aluno será encarregado de desenvolver o jogo de acordo com um cronograma estabelecido, buscando alcançar os objetivos propostos. Espera-se que os resultados contribuam para o ensino de lógica e matemática a crianças autistas, oferecendo uma ferramenta educativa inovadora e inclusiva, que também promova o desenvolvimento cognitivo e social, ao mesmo tempo em que valoriza a cultura local do Tocantins.
+
+O trabalho \cite{DBLP:journals/ijim/EderDMMS16} demonstra a criação de um aplicativo móvel interativo voltado para crianças com autismo, com o objetivo de promover o desenvolvimento de habilidades cognitivas, motoras e de comunicação de forma adaptada e personalizada.
+
+ \end{abstract}
+
+
+% ----------------------------------------------------------------------------------------------------- %
+% Capítulos do trabalho
+% ----------------------------------------------------------------------------------------------------- %
+\section*{Introdução}
+
+O Projeto de Trabalho de Conclusão de Curso tem como objetivo criar um jogo móvel para crianças com Transtorno do Espectro Autista (TEA) focado em ensinar lógica e matemática. Ele se baseia no mundo imaginário chamado Animatea, derivado do projeto "AnimaTEA: Desenvolvendo Aprendizagem Acessível para Crianças com TEA através de Animações 3D e Cultura do Tocantins". 
+
+O mundo Animatea é inspirado na biodiversidade e cultura do Tocantins e apresenta animações envolventes para ensino. O projeto visa expandir além das animações, propondo um jogo móvel que utilize o cenário e personagens de Animatea para interativamente ensinar lógica e matemática, combinando animações de qualidade com a gamificação para promover inclusão e desenvolvimento cognitivo nas crianças com TEA. O projeto realizará uma investigação aprofundada dos aspectos técnicos e pedagógicos para criar uma ferramenta educativa divertida e interativa para crianças com TEA, contribuindo para seu processo de aprendizagem.
+
+O Transtorno do Espectro Autista (TEA) é uma condição que afeta o desenvolvimento social, comunicativo e comportamental, variando em sintomas e gravidade. Crianças com TEA enfrentam desafios na comunicação, interação social e comportamentos repetitivos. No aprendizado, lidam com dificuldades de adaptação, sensibilidades sensoriais e compreensão de conceitos abstratos, como lógica e matemática. O projeto de desenvolver um jogo educativo para crianças com TEA que aborda esses conceitos busca criar uma abordagem adaptada, envolvente e inclusiva para seu estilo de aprendizado.
+
+A criação deste jogo educativo é crucial para enfrentar os desafios educacionais das crianças com TEA. Essa ferramenta interativa pode tornar o aprendizado mais envolvente e compreensível, ajudando a desenvolver habilidades cognitivas e sociais. Além de impactar positivamente a vida individual das crianças, o projeto promove a inclusão e oferece um modelo para futuras abordagens educacionais inclusivas, beneficiando a sociedade como um todo.
+
+O projeto impactará a Ciência da Computação ao desenvolver jogos educativos para dispositivos móveis, explorando tecnologias emergentes, design de interação acessível e soluções inovadoras para necessidades específicas de crianças com TEA. Além disso, contribuirá para a educação inclusiva, demonstrando como a tecnologia pode melhorar o aprendizado para esse público.
+
+O projeto educacional propõe uma abordagem inovadora para ensinar lógica e matemática a crianças com TEA através de um jogo interativo baseado em Animatea. Essa abordagem visa promover a inclusão, adaptando-se às necessidades cognitivas dessas crianças por meio de imagens, animações e interatividade. Além de facilitar a compreensão, o jogo estimula o desenvolvimento social e cognitivo ao incentivar a participação ativa e prática. O projeto representa não apenas uma ferramenta educativa, mas também uma plataforma para o crescimento abrangente das crianças com TEA, contribuindo para uma educação inclusiva e acessível.\\
+
+O artigo \cite{Folostina} aborda estratégias pedagógicas para o ensino de matemática a crianças com autismo. O objetivo principal do estudo é explorar abordagens eficazes que possam auxiliar no aprendizado e desenvolvimento matemático dessas crianças. Dentre as estratégias discutidas estão o uso de materiais concretos e visualmente apelativos, o ensino em pequenos passos progressivos, a utilização de pistas visuais e a incorporação de atividades práticas e concretas.\\
+
+Para \cite{Vygotsky} “A criança aprende muito ao brincar. O que aparentemente ela faz apenas para distrair-se ou gastar energia é na realidade uma importante ferramenta para o seu desenvolvimento cognitivo, emocional, social, psicológico”. De acordo com Santos (1999):\\
+
+" O brincar está sendo cada vez mais utilizado na educação
+construindo-se numa peça importantíssima nos domínios da
+inteligência, na evolução do pensamento e de todas as funções
+superiores, transformando-se num meio viável para a construção do
+conhecimento (SANTOS, 1999, p.115)."\\
+
+Segundo \cite{Vygotsky}:\\
+
+"(...) o brinquedo promove o desenvolvimento da criança, criando o que
+chama de zona do desenvolvimento proximal, no qual a criança se
+comporta além do comportamento habitual de sua idade, além de seu
+comportamento diário, no brinquedo é como se ela fosse maior do que
+é na realidade (VIGOTSKY, 1988, p. 117). "
+
+\section*{Objetivo Geral}
+
+ O objetivo geral deste projeto de pesquisa é desenvolver um jogo educativo para dispositivos móveis que auxilie crianças com TEA no aprendizado de lógica e matemática, por meio de uma abordagem lúdica e inclusiva.
+
+Para alcançar esse objetivo, foram definidos os seguintes objetivos específicos:
+
+\section*{Objetivos Específicos}
+
+Os objetivos específicos incluem:
+
+\begin{itemize}
+    \item Realizar uma revisão bibliográfica abrangente sobre o TEA, suas características e desafios específicos no aprendizado de lógica e matemática.
+    
+    \item Estudar e analisar as ferramentas de desenvolvimento mobile mais adequadas para a criação do jogo educativo, considerando critérios como usabilidade, acessibilidade e interatividade.
+
+      \item Definir e projetar os aspectos pedagógicos do jogo, identificando os conceitos de lógica e matemática a serem abordados, bem como as estratégias de ensino e avaliação apropriadas para crianças com TEA.
+
+
+        \item Desenvolver o jogo educativo, implementando os recursos interativos, as atividades de aprendizagem e os desafios que promovam o desenvolvimento das habilidades lógicas e matemáticas das crianças.
+
+        \item Realizar testes e avaliações do jogo com crianças com TEA, a fim de coletar dados qualitativos e quantitativos sobre sua eficácia como ferramenta de aprendizado, levando em consideração a experiência do usuário, o engajamento e os resultados obtidos.
+
+        \item Analisar os resultados obtidos nos testes e avaliações, identificando os pontos fortes e as áreas de melhoria do jogo, e realizar ajustes e aprimoramentos necessários para a sua otimização.
+
+        \item Documentar e disseminar os resultados do projeto por meio de relatórios técnicos, artigos científicos e apresentações em conferências, contribuindo para a comunidade acadêmica e profissional nas áreas de Ciência da Computação e Educação.
+
+\end{itemize}
+
+O artigo \cite{Fletcher} apresenta os resultados de um estudo de caso que investigou a eficácia de um aplicativo de iPad projetado especificamente para crianças com TEA. Os resultados indicaram que o aplicativo promoveu a interação e o engajamento das crianças, além de contribuir para o desenvolvimento de habilidades motoras, linguagem e aprendizagem cognitiva. Isso ressalta a importância do design inclusivo e adaptado às necessidades das crianças com TEA no desenvolvimento de aplicativos educacionais.\\
+
+O artigo \cite{Zakari} apresenta uma revisão abrangente dos jogos sérios desenvolvidos para crianças com TEA. Os resultados indicam que esses jogos podem ser eficazes no suporte ao desenvolvimento de habilidades específicas em crianças com TEA. É mostrado que a utilização de interfaces intuitivas, feedback imediato e recompensas também são importantes para melhorar a experiência do usuário e o envolvimento das crianças mas destaca-se a necessidade de mais pesquisas para fortalecer as evidências e a compreensão sobre o uso dessas intervenções.\\
+
+Ao cumprir esses objetivos, espera-se obter um jogo educativo eficaz, inclusivo e motivador, capaz de auxiliar crianças com TEA no desenvolvimento de habilidades lógicas e matemáticas de forma divertida e significativa.
+
+\section*{Metodologia}
+
+ara conduzir este projeto e alcançar os objetivos propostos, pretende-se seguir a seguinte metodologia:
+
+\begin{itemize}
+    \item Revisão bibliográfica: Realizar uma revisão detalhada da literatura sobre TEA, educação inclusiva, jogos educativos e aprendizagem de lógica e matemática. Essa revisão será fundamental para embasar teoricamente o desenvolvimento do jogo e compreender as necessidades das crianças com TEA.
+
+    \item Definição dos requisitos do jogo: Com base na revisão bibliográfica e em consultas a especialistas na área, serão definidos os requisitos do jogo, incluindo os conceitos de lógica e matemática a serem abordados, a interface do usuário, os recursos interativos e as atividades de aprendizagem.
+
+    \item Escolha das ferramentas de desenvolvimento: Analisar e comparar diferentes ferramentas de desenvolvimento mobile, considerando critérios como facilidade de uso, recursos disponíveis e compatibilidade com as necessidades do jogo. Selecionar a ferramenta mais adequada para a implementação do jogo.
+
+    \item Projeto e desenvolvimento do jogo: Utilizando a ferramenta escolhida, o aluno de iniciação científica, juntamente com a equipe de pesquisa, irá projetar e desenvolver o jogo, implementando os requisitos definidos. Serão realizados testes de usabilidade e ajustes iterativos para garantir a qualidade do jogo.
+
+
+    \item Testes com crianças com TEA: Realizar testes e avaliações do jogo com crianças com TEA para coletar dados qualitativos e quantitativos sobre sua usabilidade, eficácia no aprendizado e engajamento. Esses testes serão conduzidos em ambiente controlado, registrando-se as interações e observando-se as reações das crianças durante a utilização do jogo.
+
+    \item Análise dos resultados: Analisar os dados coletados nos testes, considerando o desempenho das crianças, a experiência do usuário e o feedback obtido. Identificar os pontos fortes e as limitações do jogo, além de possíveis melhorias e ajustes a serem feitos.
+
+    \item Documentação e disseminação: Elaborar relatórios técnicos, artigos científicos e apresentações que documentem e compartilhem os resultados do projeto. Contribuir para a disseminação do conhecimento gerado, apresentando-o em conferências e eventos científicos.
+
+\end{itemize}
+
+\section*{Cronograma previsto de atividades \label{sec:crono}}
+
+A descrição das atividades remanescentes está listada na Tabela \ref{tb:atividades}, enquanto que o cronograma é apresentado na Tabela \ref{tb:cronograma}.
+
+%%%% INICIO ATIVIDADES PREVISTAS %%%%%%%%%%%%%%%%%
+
+\setstretch{1} 
+\begin{table}[!h]
+  \centering
+  \caption{Lista de atividades previstas.}\label{tb:atividades}
+  \begin{tabular}{cp{9.4cm}}
+    \hline \hline &\\[-0.4cm]
+    {\bf Atividades} & \multicolumn{1}{c}{\bf Descrição} \\
+    \hline
+    &\\[-0.4cm]
+    \textbf{A} &  Definir o escopo do projeto. \\[0.2cm]
+    \textbf{B} &  Revisar literatura relacionada.\\[0.2cm]
+    \textbf{C} &  Coletar dados e informações iniciais.\\[0.2cm]
+    \textbf{D} &  Definir as tecnologias a serem usadas. \\[0.2cm]
+    \textbf{E} &  Identificar as necessidades dos usuários finais. \\[0.2cm]
+    \textbf{F} &  Estabelecer requisitos do sistema.\\[0.2cm]
+    \textbf{G} &  Definir as restrições de design do algoritmo.\\[0.2cm]
+    \textbf{H} &  Desenvolver a lógica do algoritmo. \\[0.2cm]
+    \textbf{I} &  A elaboração do texto do TCC 1, sua revisão e formatação de acordo com as normas da instituição. \\[0.2cm]
+    \hline \hline
+  \end{tabular}
+\end{table}
+
+%%% FIM ATIVIDADES PREVISTAS %%%%%%%%%%%%%%%%%
+
+
+%%%%% INICIO DO CRONOGRAMA %%%%%%%%%%%%%%
+
+\begin{table}[!h]
+  \centering \fontsize{8}{12}%\tiny
+  \caption{Cronograma de Atividades}\label{tb:cronograma}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    {\normalsize\bf Ano}  &\multicolumn{9}{c|}{\normalsize\bf 2023/2024}\\
+    \hline
+ {\normalsize\bf Mês} &
+ \multirow{2}*{\bf Ago}&\multirow{2}*{\bf Set}&\multirow{2}*{\bf Out}& \multirow{2}*{\bf Nov}&\multirow{2}*{\bf Dez}\\
+   \cline{1-1}
+{\bf Atv.}    & & & & & & & & &  \\
+\hline
+{\normalsize\bf A} &$\surd$ &  &  & & & & & &  \\
+\hline
+{\normalsize\bf B} & &$\surd$  &  & & & & & & \\
+\hline
+%\hhline{>{\arrayrulecolor{black}}---->{\arrayrulecolor{black}}->{\arrayrulecolor{black}}------}
+{\normalsize\bf C} & & $\surd$& & & & & & &
+\\
+%\hhline{>{\arrayrulecolor{black}}----->{\arrayrulecolor{black}}-->{\arrayrulecolor{black}}----}
+\hline
+{\normalsize\bf D} &  &  $\surd$&  &  & & &  &  & \\
+%\hhline{>{\arrayrulecolor{black}}------>{\arrayrulecolor{black}}->{\arrayrulecolor{black}}----}
+\hline
+{\normalsize\bf E} & &$\surd$ & &  & & & & & \\
+%\hhline{>{\arrayrulecolor{black}}------->{\arrayrulecolor{black}}->{\arrayrulecolor{black}}---}
+\hline
+{\normalsize\bf F} & & &$\surd$ & & & & & & \\
+% \hhline{>{\arrayrulecolor{black}}-------->{\arrayrulecolor{black}}-->{\arrayrulecolor{black}}-}
+\hline
+{\normalsize\bf G} & & &$\surd$ & & & & & & \\
+% \hhline{>{\arrayrulecolor{black}}-------->{\arrayrulecolor{black}}-->{\arrayrulecolor{black}}-}
+\hline
+{\normalsize\bf H} & & & $\surd$& & & & &&\\
+% \hhline{>{\arrayrulecolor{black}}-------->{\arrayrulecolor{black}}-->{\arrayrulecolor{black}}-}
+\hline
+{\normalsize\bf I} & & & &$\surd$&$\surd$ & & & &  \\
+\hline
+
+  \end{tabular}
+\end{table}
+
+%%%% INICIO ATIVIDADES PREVISTAS 2 %%%%%%%%%%%%%%%%%
+
+\setstretch{1} 
+\begin{table}[!h]
+  \centering
+  \caption{Lista de atividades previstas.}\label{tb:atividades}
+  \begin{tabular}{cp{9.4cm}}
+    \hline \hline &\\[-0.4cm]
+    {\bf Atividades} & \multicolumn{1}{c}{\bf Descrição} \\
+    \hline
+    &\\[-0.4cm]
+    \textbf{A} &  Definir o escopo do projeto. \\[0.2cm]
+    \textbf{B} &  Revisar literatura relacionada.\\[0.2cm]
+    \textbf{C} &  Coletar dados e informações iniciais.\\[0.2cm]
+    \textbf{D} &  Definir as tecnologias a serem usadas. \\[0.2cm]
+    \textbf{E} &  Identificar as necessidades dos usuários finais. \\[0.2cm]
+    \textbf{F} &  Estabelecer requisitos do sistema.\\[0.2cm]
+    \textbf{G} &  Definir as restrições de design do algoritmo.\\[0.2cm]
+    \textbf{H} &  Desenvolver a lógica do algoritmo. \\[0.2cm]
+    \textbf{I} &  A elaboração do texto do TCC 2, sua revisão e formatação de acordo com as normas da instituição. \\[0.2cm]
+    \hline \hline
+  \end{tabular}
+\end{table}
+
+%%% FIM ATIVIDADES PREVISTAS %%%%%%%%%%%%%%%%%
+
+%%%%% INICIO DO CRONOGRAMA TCC 2 %%%%%%%%%%%%%%
+
+\begin{table}[!h]
+  \centering \fontsize{8}{12}%\tiny
+  \caption{Cronograma de Atividades}\label{tb:cronograma}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+    \hline
+    {\normalsize\bf Ano}  &\multicolumn{9}{c|}{\normalsize\bf 2023/2024}\\
+    \hline
+ {\normalsize\bf Mês} &
+ \multirow{2}*{\bf Jan}&\multirow{2}*{\bf Fev}&\multirow{2}*{\bf Mar}& \multirow{2}*{\bf Abr}&\multirow{2}*{\bf Mai}& \multirow{2}*{\bf Jun}& \multirow{2}*{\bf Jul}\\
+   \cline{1-1}
+{\bf Atv.}    & & & & & & & & &  \\
+\hline
+{\normalsize\bf A} &$\surd$ &  &  & & & &   \\
+\hline
+{\normalsize\bf B} & &$\surd$  &  & & & &  \\
+\hline
+%\hhline{>{\arrayrulecolor{black}}---->{\arrayrulecolor{black}}->{\arrayrulecolor{black}}------}
+{\normalsize\bf C} & & $\surd$& & & & & 
+\\
+%\hhline{>{\arrayrulecolor{black}}----->{\arrayrulecolor{black}}-->{\arrayrulecolor{black}}----}
+\hline
+{\normalsize\bf D} &  &  $\surd$&  &  & & &   \\
+%\hhline{>{\arrayrulecolor{black}}------>{\arrayrulecolor{black}}->{\arrayrulecolor{black}}----}
+\hline
+{\normalsize\bf E} & & &$\surd$ &  & & &  \\
+%\hhline{>{\arrayrulecolor{black}}------->{\arrayrulecolor{black}}->{\arrayrulecolor{black}}---}
+\hline
+{\normalsize\bf F} & & &$\surd$ & & & &  \\
+% \hhline{>{\arrayrulecolor{black}}-------->{\arrayrulecolor{black}}-->{\arrayrulecolor{black}}-}
+\hline
+{\normalsize\bf G} & & & & $\surd$& & &  \\
+% \hhline{>{\arrayrulecolor{black}}-------->{\arrayrulecolor{black}}-->{\arrayrulecolor{black}}-}
+\hline
+{\normalsize\bf H} & & & & &$\surd$ & & \\
+% \hhline{>{\arrayrulecolor{black}}-------->{\arrayrulecolor{black}}-->{\arrayrulecolor{black}}-}
+\hline
+{\normalsize\bf I} & & & & & &$\surd$ &$\surd$   \\
+\hline
+
+  \end{tabular}
+\end{table}
+
+
+% ----------------------------------------------------------------------------------------------------- %
+% Bibliografia
+% ----------------------------------------------------------------------------------------------------- %
+\bibliography{references}
+
+\end{document}
